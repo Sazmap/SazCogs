@@ -37,17 +37,21 @@ class RedditVideo(commands.Cog):
         self.convert_task = None
 
     async def download_vid(self):
+        self.dl_success = False
         try:
-            b = subprocess.run([
+            p = subprocess.Popen([
                 'youtube-dl', f'{self.url}', '-f bestvideo+bestaudio/bestvideo', '-q',
-                '-o', f'{self.vid_name}', '--merge-output-format', 'mp4'
-            ],
+                '-o', f'{self.vid_name}', '--merge-output-format', 'mp4'],
                 stdout=sys.stdout,
                 stderr=sys.stderr)
+            b = p.poll()
+            while b == None:
+                await asyncio.sleep(5)
+                b = p.poll()
         except:
-            self.dl_success = False
             return
-        self.dl_success = True
+        if b == 0:
+            self.dl_success = True
 
     async def convert(self):
         self.failed_size = False
