@@ -7,7 +7,7 @@
     "description": "This cog will effectively 'embed' reddit videos into a discord channel. This is to enable playing a video from Reddit on Discord.",
     "install_msg": "Thanks for installing RedditVideo! <p>help should have all the information you need",
     "requirements": [
-        "youtube-dl"
+        "youtube_dl"
     ],
     "tags": [
         "video"
