@@ -1,0 +1,9 @@
+{
+    "name": "SazCogs",
+    "author": [
+        "Sazmap"
+    ],
+    "short": "Sazmap's Cogs for Red-DiscordBot.",
+    "description": "My cogs focus on adding a few useful features/games that I personally use in my discord server.",
+    "install_msg": "Thank you for installing my repo!\nFor more information on my cogs, or to report any bugs/suggestions, go to my GitHub here: <https://github.com/Sazmap/SazCogs>.\n"
+}
