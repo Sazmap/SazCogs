@@ -18,9 +18,9 @@ except Exception as e:
     requirementsSuccess = False
 
 
-def setup(bot):
+async def setup(bot):
     if requirementsSuccess:
-        bot.add_cog(RedditVideo(bot))
+        await bot.add_cog(RedditVideo(bot))
     else:
         raise RuntimeError(
             "You are missing requirements. Please run:\n"

@@ -7,9 +7,9 @@ except:
     requirementsSuccess = False
 
 
-def setup(bot):
+async def setup(bot):
     if requirementsSuccess:
-        bot.add_cog(SazBlackjack(bot))
+        await bot.add_cog(SazBlackjack(bot))
     else:
         raise RuntimeError("You are missing requirements. Please run:\n"
                            "`pip install prettytable`")
