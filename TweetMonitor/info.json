@@ -1,0 +1,15 @@
+{
+    "name": "TweetMonitor",
+    "author": [
+        "Sazmap"
+    ],
+    "short": "Monitors a twitter feed and posts any tweets found",
+    "description": "This cog will effectively post any tweets (including images) into a discord channel.",
+    "install_msg": "Thanks for installing TweetMonitor! <p>help should have all the information you need",
+    "requirements": [],
+    "tags": [
+        "social"
+    ],
+    "min_bot_version": "3.5.0",
+    "end_user_data_statement": "This cog does not persistently store data or metadata about users."
+}

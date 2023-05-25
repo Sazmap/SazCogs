@@ -37,9 +37,7 @@ def is_int(s):
 
 
 def get_deck():
-    return [Card(rank, suit) for rank in card_ranks for suit in card_suits] * 7
-    #return [Card(rank, suit) for rank in ['Ace', 'Ace', 'Ace', 'Ace'] for suit in card_suits] * 7
- 
+    return [Card(rank, suit) for rank in card_ranks for suit in card_suits] * 7 
 
 class CasinoError(Exception):
     pass

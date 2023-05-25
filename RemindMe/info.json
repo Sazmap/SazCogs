@@ -1,0 +1,17 @@
+{
+    "name": "RemindMe",
+    "author": [
+        "Sazmap"
+    ],
+    "short": "Waits the period of time specified, and then reminds the user of the message",
+    "description": "Reply to a message that you wish to be reminded of, and enter <p>remindme <duration>. Bot will wait for that long and then remind the user. Duration is in form [j y[ears]] [k mo[nths]] [l d[ays]] [m h[ours]] [n m[inutes]] [o s[econds]]",
+    "install_msg": "Thanks for installing RemindMe! <p>help should have all the information you need",
+    "requirements": [
+        "python-dateutil"
+    ],
+    "tags": [
+        "utilities"
+    ],
+    "min_bot_version": "3.5.0",
+    "end_user_data_statement": "This cog does not persistently store data or metadata about users."
+}
