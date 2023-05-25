@@ -52,7 +52,7 @@ class Sleeper():
     
     async def sleep(self, delay, result=None):
         self.sleeping = True
-        coro = asyncio.sleep(delay, result=result, loop=self.loop)
+        coro = asyncio.sleep(delay, result=result)
         self.task = asyncio.ensure_future(coro)
         retValue = False
         try:
@@ -63,7 +63,7 @@ class Sleeper():
         finally:
             if self.shuttingDown:
                 raise asyncio.CancelledError
-            return retValue
+        return retValue
     
     def _cancel_sleep_task(self):
         self.task.cancel()
