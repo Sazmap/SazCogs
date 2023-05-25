@@ -7,7 +7,7 @@
     "description": "Starts a live game of blackjack. Follows rough casino rules.",
     "install_msg": "Thanks for installing Blackjack! <p>help should have all the information you need",
     "requirements": [
-        "youtube_dl"
+        "prettytable"
     ],
     "tags": [
         "video"
