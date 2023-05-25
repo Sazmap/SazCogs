@@ -6,7 +6,7 @@
     "short": "Monitors a twitter feed and posts any tweets found",
     "description": "This cog will effectively post any tweets (including images) into a discord channel.",
     "install_msg": "Thanks for installing TweetMonitor! <p>help should have all the information you need",
-    "requirements": [],
+    "requirements": ["beautifulsoup4"],
     "tags": [
         "social"
     ],
